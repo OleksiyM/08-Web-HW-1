@@ -69,7 +69,7 @@ This Python application enables users to search for quotes by author name or tag
    - `help` for a list of commands
    - `exit` to quit
 
-## Project Structure**
+## Project Structure
 
 - **app.py:** Main application file with command-line interface and search logic
 - **models.py:** Defines MongoEngine models for Author and Quote
