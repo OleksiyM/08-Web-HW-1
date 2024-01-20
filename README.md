@@ -56,12 +56,12 @@ This Python application enables users to search for quotes by author name or tag
      python seed.py
      ```
 
-**## Usage**
+## Usage
 
 1. Run the application: 
-```bash
-python app.py
-```
+   ```bash
+   python app.py
+   ```
 2. Enter commands as prompted:
    - `name:<author_name>` to search by author (e.g., `name:Einstein`, `name:st` for partial matches)
    - `tag:<tag_name>` to search by tag (e.g., `tag:li` for partial matches)
@@ -69,7 +69,7 @@ python app.py
    - `help` for a list of commands
    - `exit` to quit
 
-**## Project Structure**
+## Project Structure**
 
 - **app.py:** Main application file with command-line interface and search logic
 - **models.py:** Defines MongoEngine models for Author and Quote
@@ -78,7 +78,7 @@ python app.py
 - **seeds.py:** Script to populate the database with sample data
 - **pyproject.toml:** Poetry configuration file for managing dependencies
 
-**## Technologies Used**
+## Technologies Used
 
 - Python
 - MongoDB
