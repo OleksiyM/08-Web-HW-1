@@ -6,6 +6,7 @@ from models import Author, Quote
 
 
 def main():
+    print('Loading authors...')
     with open('authors.json', encoding='utf-8', mode='r') as f:
         authors = json.load(f)
         for author in authors:
@@ -16,6 +17,7 @@ def main():
             except NotUniqueError as e:
                 print(f'Author already exists: {author.fullname}, error {e}')
 
+    print('Loading quotes...')
     with open('quotes.json', encoding='utf-8', mode='r') as fq:
         quotes = json.load(fq)
         for quote in quotes:
@@ -25,6 +27,7 @@ def main():
                 quote.save()
             except Exception as e:
                 print(f'Unable to add: {quote.quote}, error {e}')
+    print('Done')
 
 
 if __name__ == "__main__":
